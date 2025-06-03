@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PatientCard from "./PatientCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center" }}>
+      <h2>React Patient Dashboard</h2>
+      <PatientCard name="Ahmed" email="ahmed@example.com" city="Riyadh" />
+      <PatientCard name="Sara" email="sara@example.com" city="Jeddah" />
     </div>
   );
 }
